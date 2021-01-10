@@ -1,9 +1,19 @@
 <% provide(:title, "Help") %>
-<h1>Help</h1>
-<p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="https://railstutorial.jp/help">Rails Tutorial help page</a>.
-  To get help on this sample app, see the
-  <a href="https://railstutorial.jp/#ebook"><em>Ruby on Rails Tutorial</em>
-  book</a>.
-</p>
+<div class="help">
+  <h1>Help</h1>
+  <p>　このサイトはSNSとしての機能を持たせたアプリになります。<br>
+  現在は以下の機能が実装されています</p>
+  <ul>
+    <li>アカウント作成　※メールによるアドレス確認機能はカットしてあります。</li>
+    <li>ログイン、ログアウト</li>
+    <li>コメントや画像の投稿と削除</li>
+    <li>フォロー、アンフォロー</li>
+    <li>フォロー、フォロワーの一覧表示</li>
+    <li>ユーザー削除　※ルートユーザーのみ</li>
+  </ul>
+  <p>　上記の機能には入力ミスの際に、エラーメッセージが表示されます。<br>
+  また、デバックの表示は現在非表示になっています。</p>
+  <p class="root_user">ルートユーザー<br>
+  E-mail:example@railstutorial.org<br>
+  Pass:foobar</p>
+</div>

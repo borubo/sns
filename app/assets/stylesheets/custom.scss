@@ -11,6 +11,20 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+button {
+  margin-top: 10px;
+  padding: 0;
+  float: right;
+}
+
+#menu {
+  float: right;
+}
+
+li {
+  margin: 8px;
+}
+
 /* universal */
 
 body {
@@ -25,11 +39,11 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+.img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 70px;
 }
 
 /* typography */
@@ -77,6 +91,12 @@ p {
   }
 }
 
+.btn {
+  padding: 5px 0;
+  width: 100%;
+  font-size: 24px;
+}
+
 /* footer */
 
 footer {
@@ -84,23 +104,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
+  text-align: center;
 }
 
 /* miscellaneous */
@@ -296,4 +300,31 @@ span.image {
   input {
     border: 0;
   }
+}
+
+.root_user {
+  color: white;
+}
+
+
+.help,
+#log_in,
+#sign_up,
+#edit,
+#all_user,
+div.row{
+  padding-top: 60px;
+}
+
+
+@media (min-width:750px){
+  button {
+    display: none;
+  }
+}
+
+.help {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
 }
