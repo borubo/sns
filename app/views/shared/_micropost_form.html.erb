@@ -9,6 +9,17 @@
   </span>
 <% end %>
 
+<%= search_form_for @q, url: @url do |f| %>
+  <%= f.label :content_cont, 'Micoropost Search' %>
+  <div class="input-group">
+    <%= f.text_field :content_cont, placeholder: "Enter keyword...",
+                      class: 'form-control' %>
+    <span class="input-group-btn">
+     <%= f.submit 'Go', class: "btn btn-primary" %>
+    </span>
+  </div>
+<% end %>
+
 <script type="text/javascript">
   $("#micropost_image").bind("change", function() {
     var size_in_megabytes = this.files[0].size/1024/1024;
