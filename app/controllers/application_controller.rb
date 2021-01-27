@@ -2,6 +2,10 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   private
+  
+    def microposts_search_params
+      params.require(:q).permit(:content_cont)
+    end
 
     # ユーザーのログインを確認する
     def logged_in_user
